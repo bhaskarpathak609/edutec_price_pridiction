@@ -5,8 +5,8 @@ import sklearn
 import streamlit as st
 #from sklearn.preprocessing import MinMaxScaler
 
-pickle_in = open(r'C:\Users\Bhaskar\Downloads\edutech_price_pred\edtech_flask_new.pkl', 'rb')
-final_model = pickle.load(pickle_in)
+pickle_in = pickle.load(open(r'C:\Users\Bhaskar\Downloads\edutech_price_pred\edtech_flask_new.pkl', 'rb'))
+
 
 
 def main():
@@ -147,7 +147,7 @@ def main():
     
     result=""
     if st.button("Predict"):
-        result= final_model.predict([[institute_brand_value, instructors_grade, number_of_instructors,
+        result= pickle_in.predict([[institute_brand_value, instructors_grade, number_of_instructors,
               course_Level, course_length, cost_of_course_curricullum,
               study_material_cost, Office_rent, Infrastructure_cost,
               Office_electricity_charges, Misclleneous_expense,
