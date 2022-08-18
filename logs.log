@@ -1,0 +1,6 @@
+2022-08-18 15:14:34,912:WARNING:C:\Users\Bhaskar\anaconda3\lib\site-packages\sklearn\model_selection\_split.py:684: UserWarning: The least populated class in y has only 1 members, which is less than n_splits=3.
+  warnings.warn(
+
+2022-08-18 15:15:07,804:WARNING:C:\Users\Bhaskar\anaconda3\lib\site-packages\sklearn\base.py:443: UserWarning: X has feature names, but GradientBoostingRegressor was fitted without feature names
+  warnings.warn(
+
